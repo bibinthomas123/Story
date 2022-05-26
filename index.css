@@ -35,7 +35,7 @@ body {
 
 .css-image {
     position: relative;
-    background-color: skyblue;
+    background-image: linear-gradient(to bottom , rgb(238, 90, 37),blue);
     width: 50%;
     height: 300px;
     top: 65px;
@@ -43,6 +43,7 @@ body {
     left: 25%;
     text-align: center;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .cloud {
@@ -107,6 +108,47 @@ body {
     animation-duration: 1000ms;
 }
 
+
+.sun{
+    width: 75px;
+    height: 75px;
+    background-color:yellow;
+    border-radius: 50%;
+    position: absolute;left:10%;
+    top: 5%;
+    box-shadow: yellow 0px 10px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+   
+.swan{
+    filter:invert(1);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+   top: 60%;
+   right:30%;
+}
+
+.swan::before{
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+.swan:nth-last-child(2)::before{
+    content: " ";
+    width: 3px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
 
 
 @keyframes slide_top {
