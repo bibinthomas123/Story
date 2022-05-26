@@ -15,4 +15,3 @@
 //   console.info("This page is not reloaded");
 // }
 
-let hi = document.body;
