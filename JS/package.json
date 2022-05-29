@@ -1,0 +1,11 @@
+{
+  "name": "sleepy_stories",
+  "version": "1.0.0",
+  "description": "A small storiy teller with images using Css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bibin thomas",
+  "license": "ISC"
+}
