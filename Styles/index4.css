@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Libre+Baskerville:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none ;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #5D7765;
+}
+
+.story {
+    position: absolute;
+    color: white;
+    top: 500px;
+    width: 55%;
+    left: 23%;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 100;
+    word-spacing: 2px;
+}
+
+.navbar {
+    font-family: 'Dancing Script', cursive;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 19px 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #79a586;
+
+}
+
+
+
+.css-image {
+    position: relative;
+    background-image: url("https://steemitimages.com/p/23KQwnti57stsAqnmxXGA85p92YRDtzH4cJUqVETzjEDgcYuq4pzf24JrMgpX5oGLZZiHTjDsYNbKFeCyrbftXvp7UpciLE?format=match&mode=fit&width=640");
+    width: 50%;
+    height: 300px;
+    top: 65px;
+    padding-bottom: 10px;
+    left: 25%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+

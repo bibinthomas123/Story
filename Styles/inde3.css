@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+user-select: none;
 
 }
 
@@ -32,7 +33,7 @@ body {
 
 .css-image {
     position: relative;
-
+    
     background-image: url("https://img.freepik.com/free-vector/nature-scene-with-river-hills-forest-mountain-landscape-flat-cartoon-style-illustration_1150-37326.jpg?w=2000");
     background-position: center;
     background-size: cover;
@@ -52,7 +53,7 @@ body {
     position: absolute;
     left: 0%;
     width: 100%;
-    height: 75%;
+    height: 78%;
     background-color: black;
     position: absolute;
     opacity: 1;
