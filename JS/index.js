@@ -22,23 +22,9 @@ function redirectToNextPage() {
   window.location.replace(pages[index]); //do the redirect to the next page
 }
 
-// window.addEventListener('beforeunload', redirectToNextPage);
 
-// if (window.performance) {  // To check the compatibility of the browser with "performance "
-//   console.info("window.performance works fine on this browser");
-// }
 
-function TexttoSpeech() {
-  var msg = new SpeechSynthesisUtterance();
-  var voices = window.speechSynthesis.getVoices();
-  msg.voice = voices[7];
-  msg.volume = 1; // From 0 to 1
-  msg.rate = 1; // From 0.1 to 10
-  msg.pitch = 1; // From 0 to 2
-  msg.text = document.getElementById("text").innerHTML;
-  msg.lang = "es";
-  window.speechSynthesis.speak(msg);
-}
+
 
 var audio = document.createElement("AUDIO")
 document.body.appendChild(audio);
@@ -51,6 +37,4 @@ document.body.addEventListener("mousemove", function () {
 
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
   redirectToNextPage(); //If the page reload this function is called
-  TexttoSpeech();
-
 }
