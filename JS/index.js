@@ -1,7 +1,6 @@
 // let audio = new Audio("/JS/videoplayback_SwUrQwLV.mp3");
 //array containing our pages
-const pages = ["story1.html", "story2.html", "story3.html", "story4.html"];
-
+const pages = ["index.html", "story2.html", "story3.html", "story4.html"];
 
 function redirectToNextPage() {
   //get the current page - this grabs just the last part of the URL (e.g. "story1.html" instead of "HTML/story1.html"
@@ -22,18 +21,13 @@ function redirectToNextPage() {
   window.location.replace(pages[index]); //do the redirect to the next page
 }
 
-
-
-
-
-var audio = document.createElement("AUDIO")
+var audio = document.createElement("AUDIO");
 document.body.appendChild(audio);
-audio.src = "/JS/videoplayback_SwUrQwLV.mp3"
+audio.src = "https://bibinthomas123.github.io/Story/JS/videoplayback_SwUrQwLV.mp3";
 
 document.body.addEventListener("mousemove", function () {
-    audio.play()
-    
-})
+  audio.play();
+});
 
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
   redirectToNextPage(); //If the page reload this function is called
